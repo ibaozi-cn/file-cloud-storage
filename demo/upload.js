@@ -1,10 +1,10 @@
 var needle = require('needle');
 
 var data = {
-    path:'esa',
+    path:'test',
     version:'1.0.0',
     version_code:20,
-    file: { file: './watch_v2.2.0_200805_huawei_debug.apk', content_type: 'apk' }
+    file: { file: './flutter.png', content_type: 'png' }
 }
 
 needle.post('http://localhost:4000/upload', data, { multipart: true }, function(err, resp, body) {
